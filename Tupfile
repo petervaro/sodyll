@@ -1,0 +1,42 @@
+## INFO ##
+## INFO ##
+
+# Include rules
+include tuplet/Tuprules.tup
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+CPPPATH += -I$(INCLUDE_DIR)
+LIBPATH += -L$(LIBRARY_DIR)
+LIBS    += -ldl
+
+#------------------------------------------------------------------------------#
+# Analyse sources
+: $(INCLUDE_DIR)/sodyll/sodyll.h |> !analyze |>
+
+
+#------------------------------------------------------------------------------#
+# Analyse tests
+: foreach tests/*.c |> !analyze |>
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Compile test shared library
+: tests/myprinter.c |> !to_obj |> $(BUILD_DIR)/%B.$(OBJ_EXT) {lib_obj}
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Build shared object
+: {lib_obj} |> !to_lib |> $(BUILD_DIR)/%B.$(LIB_EXT) {lib}
+
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Compile test binary
+: tests/test.c |> !to_obj |> $(BUILD_DIR)/%B.$(OBJ_EXT) {bin_obj}
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Build binary
+: {bin_obj} |> !to_bin $(LIBS) |> $(BUILD_DIR)/%B {bin}
+
+
+#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Run tests
+ENV_VARS = LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(BUILD_DIR)
+: {bin} | {lib} |> !run_it |>
