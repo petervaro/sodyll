@@ -272,8 +272,8 @@ Copyright &copy; 2016 **JROH Creative**
 
 <!-- -->
 
-[1]: https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.png
+[1]: img/badges/gnu.png
 [2]: http://www.gnu.org/licenses/gpl.html
-[3]: https://img.shields.io/badge/standard-ISO_C11-lightgrey.png
+[3]: img/badges/c11.png
 [4]: http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf
 [5]: img/logo.png?raw=true "SODYLL"
