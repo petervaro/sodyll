@@ -46,7 +46,7 @@ Install
 One should move the content of the `include` folder of this repository to
 anywhere, where the compiler can see it. And then one should include it like:
 
-```C
+```c
 #include <sodyll/sodyll.h>
 ```
 
@@ -63,7 +63,7 @@ Tutorials
 The following code snippet is compiled to a dynamically linked library, called
 `myprinter` plus the platform specific extension:
 
-```C
+```c
 #include <stdio.h>
 #include <sodyll/sodyll.h>
 
@@ -88,7 +88,7 @@ MyPrinter(const char *string)
 The following code snippet will load the symbols `TEST_STRING` and `MyPrinter`
 from the above mentioned dynamically loaded library:
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <sodyll/sodyll.h>
@@ -149,7 +149,7 @@ Documentation
 -------------
 
 - - -
-```C
+```c
 #define SO_LIBRARY_EXTENSION
 ```
 This macro expands to a nul-terminated `const char*` string object, which is:
@@ -158,7 +158,7 @@ This macro expands to a nul-terminated `const char*` string object, which is:
 
 
 - - -
-```C
+```c
 #define SO_EXPORT
 ```
 This macro should be used to indicate which objects needs to be *exported* by
@@ -167,7 +167,7 @@ the dynamically loaded library.
 
 
 - - -
-```C
+```c
 typedef enum
 {
     so_LAZY,
@@ -190,7 +190,7 @@ they are not defined by the platform.
 
 
 - - -
-```C
+```c
 void*
 so_Open(const char *path,
         so_Flags    flags);
@@ -210,7 +210,7 @@ Returns a valid, opaque handler pointer on success, `NULL` otherwise.
 
 
 - - -
-```C
+```c
 void*
 so_GetData(void       *restrict handler,
            const char *restrict symbol);
@@ -222,7 +222,7 @@ Returns a pointer to an exported object on success, `NULL` otherwise.
 
 
 - - -
-```C
+```c
 void
 (*so_GetFunc(void       *restrict handler,
              const char *restrict symbol))(void);
@@ -234,7 +234,7 @@ Returns a pointer to an exported function on success, `NULL` otherwise.
 
 
 - - -
-```C
+```c
 bool
 so_Close(void *handler);
 ```
@@ -272,8 +272,8 @@ Copyright &copy; 2016 **JROH Creative**
 
 <!-- -->
 
-[1]: https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.svg
+[1]: https://img.shields.io/badge/license-GNU_General_Public_License_v3.0-blue.png
 [2]: http://www.gnu.org/licenses/gpl.html
-[3]: https://img.shields.io/badge/standard-ISO_C11-lightgrey.svg
+[3]: https://img.shields.io/badge/standard-ISO_C11-lightgrey.png
 [4]: http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf
 [5]: img/logo.png?raw=true "SODYLL"
