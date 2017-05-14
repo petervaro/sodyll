@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg4540"
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="avatar.svg"
+   inkscape:export-filename="/home/petervaro/documents/personal/remote/sodyll/img/avatar.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs4534">
+    <linearGradient
+       gradientTransform="translate(-31.928866,184.5102)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient4639"
+       id="linearGradient4641-5"
+       x1="102.03983"
+       y1="92.813225"
+       x2="102.03983"
+       y2="36.125359"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4639">
+      <stop
+         style="stop-color:#4f3343;stop-opacity:1"
+         offset="0"
+         id="stop4635" />
+      <stop
+         style="stop-color:#687d9d;stop-opacity:1"
+         offset="1"
+         id="stop4637" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter4995"
+       x="-0.25"
+       width="1.5"
+       height="1.5"
+       y="-0.20000000000000001">
+      <feFlood
+         flood-opacity="0.454902"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4985" />
+      <feComposite
+         in="SourceGraphic"
+         in2="flood"
+         operator="in"
+         result="composite1"
+         id="feComposite4987" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2.3"
+         result="blur"
+         id="feGaussianBlur4989" />
+      <feOffset
+         dx="0"
+         dy="3"
+         result="offset"
+         id="feOffset4991" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite2"
+         id="feComposite4993" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="163.07934"
+     inkscape:cy="139.62985"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1437"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4537">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-229.26666)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4513-6-7"
+       style="fill:url(#linearGradient4641-5);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.18469778px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4995)"
+       d="m 33.244315,243.27262 h -10.24976 v -2.4384 l -3.91159,5.1308 3.91159,5.1816 v -2.3368 c 3.94707,0 6.19432,0.88167 7.71365,2.41092 1.71229,1.72348 2.95435,4.13478 2.95435,7.04145 0,2.80289 -0.86042,4.72315 -2.16088,6.24839 -1.51966,1.78235 -3.99316,3.50164 -6.42432,3.50164 H 14.83825 v -6.858 h 10.188305 v 2.3368 l 3.9116,-5.1308 -4.0132,-5.1816 v 2.4384 c -0.270931,0.0677 -0.57573,0.1016 -0.9144,0.1016 -1.99813,0 -4.34557,-0.64338 -6.19681,-2.26261 -2.43723,-2.13178 -3.44968,-4.27166 -3.45518,-7.18619 -0.005,-2.47227 0.8636,-4.7244 2.5908,-6.7564 1.76106,-2.032 3.8608,-3.048 6.29919,-3.048 h 9.99576 z"
+       transform="matrix(1.421124,0,0,1.4440076,-0.25530107,-103.37914)"
+       sodipodi:nodetypes="cccccccscscccccccssccscc" />
+  </g>
+</svg>
