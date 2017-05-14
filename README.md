@@ -265,10 +265,10 @@ If not, see <http://www.gnu.org/licenses>.
 
 - - -
 
-The font used and modified in the logo is called **Selima Script**. Its license
-allows both commercial and personal use. (Lisense type unknown.)
+The font used and modified in the logo is called *You Are The One**. It is
+licensed under the [1001Fonts General Font Usage Terms][6].
 
-Copyright &copy; 2016 **JROH Creative**
+Copyright &copy; 2003 **Jakob Fischer**
 
 <!-- -->
 
@@ -277,3 +277,4 @@ Copyright &copy; 2016 **JROH Creative**
 [3]: img/badges/c11.png
 [4]: http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf
 [5]: img/logo.png?raw=true "SODYLL"
+[6]: http://www.1001fonts.com/licenses/general-font-usage-terms.html
